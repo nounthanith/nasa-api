@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiMenu, FiX, FiHome, FiImage, FiInfo } from 'react-icons/fi';
-
+import nasa from "./../../public/nasa.webp"
 const Navbar = ({ activeSection, setActiveSection }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -26,7 +26,7 @@ const Navbar = ({ activeSection, setActiveSection }) => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-orange-500">
-              <img className="w-auto h-16" src="./public/nasa.webp" alt="" />
+              <img className="w-auto h-16" src={nasa} alt="" />
             </span>
           </div>
           
