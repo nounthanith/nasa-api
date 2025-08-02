@@ -48,7 +48,7 @@ const CustomCursor = () => {
   return (
     <motion.div
       className={`fixed w-8 h-8 rounded-full pointer-events-none z-150 mix-blend-difference ${
-        isHovered ? 'bg-white scale-75' : 'bg-amber-400 scale-100'
+        isHovered ? 'bg-white' : 'bg-amber-400 scale-100'
       }`}
       style={{
         left: `${position.x - 12}px`,
